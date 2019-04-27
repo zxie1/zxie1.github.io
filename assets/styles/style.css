@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+    color: #f0f3f7;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* topbar */
+
+.topbar {
+    padding: 10px 0px;
+    background: #2f353f;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    background-color:  #1f2020;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 1;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    text-align: center;
+    width: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#home {
+    transition: opacity .25s ease-in-out;
+    text-decoration: none;
+}
+#home:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#about {
+    margin-left: 3vw;
+    transition: opacity .25s ease-in-out;
+    text-decoration: none;
+}
+
+#about:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#projects {
+    margin-left: 3vw;
+    transition: opacity .25s ease-in-out;
+    text-decoration: none;
+
+}
+
+#projects:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#contact {
+    margin-left: 3vw;
+    margin-right: 1.5vw;
+    transition: opacity .25s ease-in-out;
+}
+
+#contact:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.nav-items {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0;
+    min-width: 200px;
+    margin-left: auto;
+}
+
+#logo {
+    margin-left: 1.5vw;
+}
+
+/* home page */
+
+#home-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/Orange\ Mountain.jpg");
+    background-size: cover;
+    color: white;
+    z-index: -1;
+    margin: auto;
+    background-attachment: fixed;
+}
+
+.home-container {
+    padding-top: 25vh;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+/* needs fixing */
+.intro {
+    /* transform: translateY(15%); */
+    width: 30vw;
+    height: 20vw;
+    display: inline-block;
+    margin: auto;
+    margin-right: 5vw;
+    vertical-align: top;
+    margin-top: 10vh;
+}
+
+#photo1 {
+    width: 12vw;
+    height: 12vw;
+    border: 2px solid;
+    border-radius: 25px;
+    display: inline-block;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+#name {
+    font-size: 55px;
+}
+
+#line {
+    width: 180px;
+    height: 2px;
+    background: white;
+    margin: auto;
+}
+
+/* #description-1 {
+    font-size: 30px;
+    margin-top: 3vw;
+}
+
+#description-2 {
+    font-size: 30px;
+    margin-top: 1vw;
+}
+
+#description-3 {
+    font-size: 30px;
+    margin-top: 1vw;
+} */
+
+#welcome {
+    font-size: 30px;
+    margin-top: 2vw;
+}
+
+/* about page */
+
+#about-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 245, 245);
+    background-size: cover;
+    z-index: -1;
+}
+
+.about-container {
+    /* padding-top: 25vh; */
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#about-header {
+    font-size: 30px;
+    color: black;
+}
+
+#line1 {
+    width: 70px;
+    height: 2px;
+    background: black;
+    margin: auto;
+}
+
+#about-me {
+    width: 35vw;
+    height: 25vw;
+    margin: auto;
+    margin-right: 10vw;
+    vertical-align: top;
+    background: rgb(244, 247, 247);
+    display: inline-block;
+    margin: auto;
+    margin-left: 10vw;
+    margin-top: 40vh;
+    text-align: left;
+    color: black;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: rgb(104, 104, 104);
+}
+
+@media screen and (max-width: 1024px) {
+    #about-me {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    #about-me {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    #about-me {
+        font-size: 12px;
+    }
+}
+
+
+#about-title {
+    text-align: left;
+}
+
+#photo2-container {
+    display: inline-block;
+}
+
+#caption {
+    color: black;
+}
+
+#photo2 {
+    width: 25vw;
+    height: 35vw;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: rgb(104, 104, 104);
+    display: inline-block;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+/* project page */
+
+#projects-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* z-index: -1; */
+}
+
+.top-row {
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+}
+
+#projects-title {
+    padding-top: 10vh;
+    font-size: 30px;
+}
+
+#line2 {
+    width: 100px;
+    height: 2px;
+    background: white;
+    margin: auto;
+}
+
+#galaxies {
+    width: 18vw;
+    height: 32vh;
+    display: inline-block;
+    transform: translateY(-40%);
+}
+
+#enigma {
+    width: 18vw;
+    height: 32vh;
+    display: inline-block;
+    transform: translateY(-40%);
+}
+
+#proj1 {
+    width: 18vw;
+    height: 32vh;
+    display: inline-block;
+    margin-top: 8vh;
+    margin-right: 5vw;
+    border-radius: 30px;
+    border-color: rgb(104, 104, 104);
+}
+
+#proj2 {
+    width: 18vw;
+    height: 32vh;
+    display: inline-block;
+    border-radius: 30px;
+    border-color: rgb(104, 104, 104);
+}
+
+.bottom-row {
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+}
+
+#game-of-the-amazons {
+    width: 18vw;
+    display: inline-block;
+    transform: translateY(-600%);
+}
+
+#graph-api {
+    width: 18vw;
+    display: inline-block;
+    transform: translateY(-600%);
+}
+
+#proj3 {
+    width: 18vw;
+    height: 32vh;
+    display: inline-block;
+    margin-top: 10vh;
+    margin-right: 5vw;
+    border-radius: 30px;
+    border-color: rgb(104, 104, 104);
+}
+
+#proj4 {
+    width: 18vw;
+    height: 32vh;
+    display: inline-block;
+    border-radius: 30px;
+    border-color: rgb(104, 104, 104);
+}
+
+#proj1:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#proj2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#proj3:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#proj4:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* bird animation adapted from creative blog */
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+    background-size: auto 100%;
+	width: 170px;
+	height: 250px;
+    will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.bird-container {
+	position: absolute;
+	top: 18%;
+	left: 67%;
+	transform: translate(-50%,-50%);
+	will-change: transform;
+}
+
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -3600px 0;
+	}
+	
+}
