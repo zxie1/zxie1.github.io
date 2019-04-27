@@ -128,7 +128,7 @@ div a {
     margin: auto;
     margin-right: 5vw;
     vertical-align: top;
-    margin-top: 10vh;
+    margin-top: 12vh;
 }
 
 #photo1 {
@@ -218,6 +218,7 @@ div a {
     border: 2px solid;
     border-radius: 25px;
     border-color: rgb(104, 104, 104);
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1024px) {

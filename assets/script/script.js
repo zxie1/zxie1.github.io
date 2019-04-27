@@ -1,18 +1,18 @@
 $(document).ready(function() {
-    function runSequence(i) {
-        if (words.length > i) {
+    function cycle(i) {
+        if (descriptions.length > i) {
             setTimeout(function() {
                 setTimeout('$("#welcome").fadeOut()', 1600);
-                document.getElementById("welcome").innerHTML = words[i];
+                document.getElementById("welcome").innerHTML = descriptions[i];
                 $("#welcome").fadeIn();
-                runSequence(++i);
+                cycle(++i);
             }, 2000);
         } 
-        else if (words.length == i) {
-            runSequence(0);
+        else if (descriptions.length == i) {
+            cycle(0);
         }
     }
-    var words = ['Student', 'Software Engineer', 'Visionary', 'Haas Research Apprentice'];
+    var descriptions = ['Student', 'Software Engineer', 'Peer Mentor', 'Haas Research Apprentice', 'Artist', 'Innovator', 'Visionary'];
     setTimeout('$("#welcome").fadeOut()', 1500);
-    runSequence(0);
+    cycle(0);
 })
